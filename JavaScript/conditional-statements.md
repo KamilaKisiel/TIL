@@ -1,6 +1,6 @@
-#Conditional Statements
+# Conditional Statements
 
-##If statement
+## If statement
 Execute the code if statement evaluates to `true`
 ````
 if (condition) {
@@ -27,7 +27,7 @@ if (amount2 >= bankBalance) {
 console.log("Nope!")
 }
 ````
-##Else statement
+## Else statement
 Execute the code when statement evaluates to `true`.
 Otherwise do something else...
 ````
@@ -55,7 +55,7 @@ if (phone <= bankBalance) {
 Output:
 Nope!
 ````
-##Else if statement
+## Else if statement
 Statements where three or more conditions are evaluated
 ````
 if (condition a) {
@@ -90,7 +90,7 @@ if (celsiusTemperature >= 40) {
 Output:
 "C"
 ````
-##Ternary operator
+## Ternary operator
 used as shorthand for an `if...else`
 
 ````
