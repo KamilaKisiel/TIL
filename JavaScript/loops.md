@@ -133,3 +133,41 @@ apple
 orange
 plum
 ````
+
+## For...in loop
+Iterates over the properties of an object
+
+__example:__
+````
+const person = {
+    age: 52,
+    gender: "male",
+    nationality: "polish"
+}
+````
+Using the `for...in` loop, we can easily 
+access each of the property names
+````
+for (attribute in person) {
+    console.log(attribute);
+}
+````
+````
+Output:
+age
+gender
+nationality
+````
+...or access the names and values all together
+````
+for (attribute in person) {
+    console.log(`${attribute}`.toUpperCase() + `: ${person[attribute]}`);
+}
+````
+````
+Output:
+AGE: 52
+GENDER: male
+NATIONALITY: polish
+}
+````
