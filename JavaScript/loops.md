@@ -171,3 +171,57 @@ GENDER: male
 NATIONALITY: polish
 }
 ````
+## For...of loop
+To iterate over iterable objects like arrays and strings
+
+__example:__(with array)
+````
+//Initialize array of types of persons
+let persons = ['stubborn', 'clumsy', 'twisted']
+
+// Print out each type of person
+for (let person of persons) {
+    console.log(person);
+}
+````
+````
+Output:
+stubborn
+clumsy
+twisted
+````
+
+You can print out the index associated with the index elements 
+using the `entries()` method
+````
+// Loop through both index and element
+for (let [index, person] of persons.entries()) {
+    console.log(index, person);
+}
+````
+````
+Output:
+0 "stubborn"
+1 "clumsy"
+2 "twisted"
+````
+__example:__(with string)
+````
+
+let personString = "persons";
+
+// Iterate through each index in the string
+for (let person of personString) {
+    console.log(person);
+}
+````
+````
+Output:
+p
+e
+r
+s
+o
+n
+s
+````
