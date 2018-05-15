@@ -3,7 +3,7 @@
 Overly-called transition and transform excersice in css.
 Inspired by online [Udemy course by Andrei Neagoie](https://www.udemy.com/the-complete-web-developer-in-2018/learn/v4/t/lecture/8639758?start=0)
 
-### Transformation
+### Transforms
 Transforms move or change the appearance of an element.
 
 __robot example:__
@@ -19,7 +19,7 @@ __robot example:__
 }
 
 ````
-
+With transform property you can `rotate`, `translate`, `skew`, and `scale` elements.
 ### Transitions
 Transitions make the element smoothly and gradually change.
 Without a transition, an element being transformed would change abruptly from one state to another.
@@ -34,3 +34,5 @@ __robot example:__
 Above example uses two of four transition properties duration(90ms) and timing(ease-in-out).
 There is also property property that indicates on which elements transition should be applied.
 Fourth property - delay - allows to specify when the transform will start.
+
+Excellent examples of transforms and transitions in [here](https://robots.thoughtbot.com/transitions-and-transforms)
