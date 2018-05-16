@@ -62,3 +62,16 @@ animals.filter(animal => animal.weight > 10);
 ]
 */
 ````
+
+### Reduce
+
+`reduce` takes all of the elements in an array 
+and reduces them into a single value.
+````
+animals.reduce((weight, animal, index, animals) => {
+    return weight += animal.weight
+}, 0);
+/*
+5165
+*/
+````
