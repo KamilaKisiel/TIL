@@ -30,3 +30,14 @@ const animals = [
 ````
 ### Map
 
+`map` is a method used to do the same operation on each of the elements in the array 
+and return the same amount of items in the _new_ array
+
+__example:__
+````
+animals.map(animal => animal.name);
+/*
+["cat", "dog", "lion", "elephant"]
+*/
+````
+
