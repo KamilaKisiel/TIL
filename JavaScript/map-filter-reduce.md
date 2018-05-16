@@ -41,3 +41,24 @@ animals.map(animal => animal.name);
 */
 ````
 
+### Filter
+`filter` is a method used to create _new_ array only with elements that meet certain criteria
+
+__example:__
+````
+animals.filter(animal => animal.weight > 10);
+/*
+[
+    {
+        "name": "lion",
+        "size": "medium",
+        "weight": 150
+    },
+    {
+        "name": "elephant",
+        "size": "big",
+        "weight": 5000
+    }
+]
+*/
+````
