@@ -1,4 +1,5 @@
 ### Minifacebook
+Inspired by online [Udemy course by Andrei Neagoie](https://www.udemy.com/the-complete-web-developer-in-2018/learn/v4/t/lecture/8670696?start=0)
 
 ##### To create minifacebook we need two sets of data: username details and a form of news feed from your friends
 
