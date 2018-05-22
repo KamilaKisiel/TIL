@@ -10,4 +10,18 @@ let database = [
         password: "topsecret"
     }
 ];
-````
+
+let newsFeed = [
+    {
+        username: "Bolek",
+        timeline: "Had a great day digging holes on a side of the road"
+    },
+    {
+        username: "Lolek",
+        timeline: "Wonder what stardust is made of"
+    },
+    {
+        username: "Tola",
+        timeline: "There is no force on this planet which going to make me going back to school!"
+    }
+]
