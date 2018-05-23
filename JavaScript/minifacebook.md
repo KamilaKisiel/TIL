@@ -59,3 +59,29 @@ signIn(userNamePromp, passwordPrompt);
 ````
 
 After successful login news feed will be displayed in a console otherwise alert will pop up to inform that provided username and password was wrong.
+
+Another approach to user validation with an array of users, using `for` loop:
+````
+//iterating through database array and validating provided username and password//
+
+function isUserValid(username, password) {
+    for (let i=0; i < database.length; i++) {
+        if(database[i].username === username 
+        && database[i].password === password) {
+            return true;
+        }
+    }
+    return false;
+}
+
+//if isUserValid function returns true news feed shows up//
+
+function signIn(username, password) {
+    if(isUserValid(username, password)) {
+        console.log(newsfeed);
+    }else {
+        alert("Sorry, wrong username and password!");
+    }
+}
+````
+
