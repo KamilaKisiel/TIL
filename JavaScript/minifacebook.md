@@ -7,8 +7,20 @@ __username:__
 ````
 let database = [
     {
-        username: "lutek",
+        username: "Lutek",
         password: "topsecret"
+    },
+    {
+        username: "Bolek",
+        password: "123"
+    },
+    {
+        username: "Lolek",
+        password: "abracadabra"
+    },
+    {
+        username: "Tola",
+        password: "333"
     }
 ];
 ````
