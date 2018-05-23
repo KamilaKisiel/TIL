@@ -28,4 +28,18 @@ pear 3
 plum 4
 //
 ````
+using (new in ECMAScript 5) `forEach` method we can achive the same outcome:
+````
+ fruits.forEach(function(fruit, i) {
+     console.log(fruit, i)
+ })
+ ````
+let's make it prettier and reusable and take the function out of `forEach` method, like this:
+````
+function logFruits(fruit, i) {
+    console.log(fruit, i);
+}
+
+fruits.forEach(logFruits);
+````
 
