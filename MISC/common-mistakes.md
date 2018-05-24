@@ -19,4 +19,5 @@ The solution is to specify which button from the array we want to choose:
 ````
 document.getElementsByTagName("button")[0];
 ````
-with an index number a the end of method.
+with an index number at the end of method.
+So the mistake is that we try to use event listener on the array and not on the actual element
