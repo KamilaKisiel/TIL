@@ -14,6 +14,16 @@ function setGradient() {
 	css.textContent = body.style.background + ";" //update text to show which color has been choose from gradient generator
 }
 
+//set random background color
+function getRandomColor() {
+	let letters = '0123456789ABCDEF'; //hexa colors are combination of those 16 characters
+	let color = '#'; //every color in hexa starts with #
+	for (let i=0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)];
+	}
+	return color;
+}
+
 color1.addEventListener("input", setGradient);
 
 color2.addEventListener("input", setGradient);
