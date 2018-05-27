@@ -10,6 +10,8 @@ function setGradient() {
 	+ ", " 
 	+ color2.value 
 	+ ")";
+
+	css.textContent = body.style.background + ";" //update text to show which color has been choose from gradient generator
 }
 
 color1.addEventListener("input", setGradient);
