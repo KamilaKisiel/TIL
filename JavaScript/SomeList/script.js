@@ -15,7 +15,7 @@ function createListElement() {
 }
 
 function addListAfterClick() {
-	if(inputLength() > 0) { //do not add items from the epmty input//
+	if(inputLength() > 0) { //do not add items from the empty input//
 		createListElement();	
 	}
 }
