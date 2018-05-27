@@ -10,7 +10,8 @@ function inputLength(){
 function createListElement() {
 	let li = document.createElement("li"); //create a new list element//
 	li.appendChild(document.createTextNode(input.value)) //whatever comes from the input goes to li content
-	ul.appendChild(li); //new li is added at the and of existing list		input.value = ""; //clear input after entering item to prevent double adding
+	ul.appendChild(li); //new li is added at the and of existing list		
+	input.value = ""; //clear input after entering item to prevent double adding
 }
 
 function addListAfterClick() {
