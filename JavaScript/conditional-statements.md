@@ -115,7 +115,7 @@ function moveCommand(direction) {
     switch (direction) {
         case "forward":
             whatHappens = "you encounter a monster';
-            break;
+            break; //if this is true stop checking other cases and go straight to 'return'
         case "back":
             whatHappens = "you arrived home";
             break;
