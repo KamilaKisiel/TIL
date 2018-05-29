@@ -45,6 +45,18 @@ function funky4() {
 
 //outcome: test
 ````
+### ECMAScript6 changes rules of understanding scope of a function by introducing `let` and `const`
+````
+let a = 1;
+function funky4() {
+    let a = "test"; // this one will not override variable declared outsie function
+    console.log(a);
+}
+console.log(a);
+
+//outcome: test and 1
+````
+
 #### does `if` statements create their own scope? NO!
 ````
 var a = 2;
@@ -65,3 +77,13 @@ console.log(a);
 
 //outcome: 2 and (after function foo being called) 5
 ````
+but in ECMAScript6:
+````
+let a = 2;
+if (true) {
+    let a = 5; //viariable let is available only within brackets and it does not override varriable declared outside expression
+    console.log(a);
+}
+console.log(a);
+// outcome 5 and 2
+
