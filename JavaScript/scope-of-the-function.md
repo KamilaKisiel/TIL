@@ -86,4 +86,27 @@ if (true) {
 }
 console.log(a);
 // outcome 5 and 2
+````
+#### additional topics connected with `scope` of function are `closure` and `currying`
+`closure` happens when a function ran, the function executed, it's never going to execute again, but it's going to remember that there are references to those variables so the
+child scope always has acces to the parent scope
+
+children scope => parent scope
+parent scope =/=> children scope
+
+
+`currying` process of converting a function that takes multiple arguments into the function that takes one a the time, like that:
+```
+//conveting this:
+const multiply = (a,b) => a * b;
+
+//into this:
+const curriedMultiply = (a) => (b) => a * b; 
+
+//it's make a function inside a function and if we call curriedMultiply() the outcome looks like that:
+(b) => a * b;
+
+//in order to make it work we need to put need to call it like this:
+curriedMultiply(2)(3);
+```
 
