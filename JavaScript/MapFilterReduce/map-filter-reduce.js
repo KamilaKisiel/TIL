@@ -1,4 +1,4 @@
-const array = [1, 2, 10, 16];
+const array = [1, 2, 10, 16, 19];
 
 //to multiply each number in array we can use forEach loop
 //but we need to create a new array and push the result in it
@@ -10,13 +10,15 @@ const array = [1, 2, 10, 16];
 //to avoid that we can use `map` method
 
 //MAP
-
+//1)
 const mapArray = array.map((a) => {
     return a * 2; //remember to `return'!!
 });
 console.log(mapArray);
 //map has a restriction on the operation - it expects the operation to 
 //'return' and stores whatever comes out in new array
+
+//2)
 
 
 //digression-shorthand for singleargument arrow function
@@ -42,22 +44,26 @@ const animals = [
     {
         "name": "cat",
         "size": "small",
-        "weight": 5
+        "weight": 5,
+        "items": ["claws", "whiskers"]
     },
     {
         "name": "dog",
         "size": "small",
-        "weight": 10
+        "weight": 10,
+        "items": ["bark", "nose"]
     },
     {
         "name": "lion",
         "size": "medium",
-        "weight": 150
+        "weight": 150,
+        "items": ["mane", "roar"]
     },
     {
         "name": "elephant",
         "size": "big",
-        "weight": 5000
+        "weight": 5000,
+        "items": ["trunk", "ears"]
     }
 ]
 //forEach loop to create array with animal names with '!'
@@ -87,3 +93,12 @@ const total = animals.reduce((acc, animal) => {
 	return acc + animal.weight
 }, 0);
 console.log(total);
+
+//add '!' to the end of each item
+const animalItems = animals.map(animal => {
+	animal.items = animal.items.map(item => {
+		return item + "!"
+	});
+	return animal;
+})
+console.log(animalItems);
