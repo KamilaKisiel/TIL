@@ -87,7 +87,7 @@ if (true) {
 console.log(a);
 // outcome 5 and 2
 ````
-#### additional topics connected with `scope` of function are `closure` and `currying`
+#### additional topics connected with `scope` of function are `closure`, `currying` and `compose`
 `closure` happens when a function ran, the function executed, it's never going to execute again, but it's going to remember that there are references to those variables so the
 child scope always has acces to the parent scope
 
@@ -108,5 +108,25 @@ const curriedMultiply = (a) => (b) => a * b;
 
 //in order to make it work we need to put need to call it like this:
 curriedMultiply(2)(3);
+
+a useful example(function that always multiplates by 5):
+multiplyBy5 = curriedMultiply(5);
+multiplyBy5(5);
+//outcome 25
+multiplyBy5(11);
+//outcome 55
+```
+`compose` is a process of puting two functions together to form a third function when the output of one function is the input of the other
+```
+def:
+const compose = (f, g) => (a) => (f(g(a)));
+
+example:
+const sum = (num) => num +1;
+
+compose(sum, sum)(5);
+
+//output is 7
+first it gets function that adds 5+1, then 6 comes as an input to the second function which also adds up 6+1
 ```
 
