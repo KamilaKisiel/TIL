@@ -49,7 +49,7 @@ function funky4() {
 ````
 let a = 1;
 function funky4() {
-    let a = "test"; // this one will not override variable declared outsie function
+    let a = "test"; // this one will not override variable declared outside function
     console.log(a);
 }
 console.log(a);
