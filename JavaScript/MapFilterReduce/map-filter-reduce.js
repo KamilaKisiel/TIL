@@ -9,6 +9,8 @@ const array = [1, 2, 10, 16];
 // console.log(double)
 //to avoid that we can use `map` method
 
+//MAP
+
 const mapArray = array.map((a) => {
     return a * 2; //remember to `return'!!
 });
@@ -20,3 +22,16 @@ console.log(mapArray);
 //digression-shorthand for singleargument arrow function
 const mapArray = array.map(a => a * 2);
 console.log(mapArray);
+
+//FILTER
+
+const filterArray = array.filter(a => a > 5);
+
+console.log(filterArray);
+
+//REDUCE
+
+const reduceArray = array.reduce((accumulator, num) => {
+    return accumulator + num
+}, 0)
+//we begin from 0 and add up next numbers in array
