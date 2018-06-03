@@ -35,3 +35,55 @@ const reduceArray = array.reduce((accumulator, num) => {
     return accumulator + num
 }, 0)
 //we begin from 0 and add up next numbers in array
+
+//advanced examples on the given array:
+const animals = [
+
+    {
+        "name": "cat",
+        "size": "small",
+        "weight": 5
+    },
+    {
+        "name": "dog",
+        "size": "small",
+        "weight": 10
+    },
+    {
+        "name": "lion",
+        "size": "medium",
+        "weight": 150
+    },
+    {
+        "name": "elephant",
+        "size": "big",
+        "weight": 5000
+    }
+]
+//forEach loop to create array with animal names with '!'
+let newArray = [];
+animals.forEach(animal => {
+    let { name } = animal;
+    name = name + "!";
+    newArray.push(name);
+})
+console.log(newArray);
+
+//map method to put '?' after each animal name
+const mapArray = animals.map(animal => {
+	let { name } = animal;
+	return name + "?";
+})
+console.log(mapArray);
+
+//filter array to only show small animals
+const filterArray = animals.filter(animal => {
+	return animal.size === "small";
+})
+console.log(filterArray);
+
+//using reduce find total weight of animals
+const total = animals.reduce((acc, animal) => {
+	return acc + animal.weight
+}, 0);
+console.log(total);
