@@ -13,3 +13,10 @@ const mapArray = array.map((a) => {
     return a * 2; //remember to `return'!!
 });
 console.log(mapArray);
+//map has a restriction on the operation - it expects the operation to 
+//'return' and stores whatever comes out in new array
+
+
+//digression-shorthand for singleargument arrow function
+const mapArray = array.map(a => a * 2);
+console.log(mapArray);
