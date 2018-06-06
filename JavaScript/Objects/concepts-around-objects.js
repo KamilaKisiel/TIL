@@ -22,6 +22,7 @@ obj4.a() //is the same as this.a()
 
 
 //instantiation - make copy of an object an reuse the code
+//example1
 class Player {
     constructor(name, type) {
         this.name = name;
@@ -42,3 +43,24 @@ class Wizard extends Player { // so wizard will have everything that's inside pl
 
 const wizard1 = new Wizard('Lolek', 'Healer');
 const wizard2 = new Wizard('Bolek', 'Dark magic');
+//example2
+class Animal {
+    constructor (name, type, color){
+        this.name = name;
+        this.type = type;
+        this.color = color;
+    }
+}
+
+class Mamal extends Animal {
+    constructor (name, type, color) {
+        super (name, type, color)
+    }
+    sound() {
+        console.log(`Moo, my name is ${this.name} and I'm a ${this.color} ${this.type}`)
+    }
+}
+
+const cow = new Mamal("Tosia", "cow", "black");
+
+//cow.sound()   ->   Moo, my name is Tosia and I'm a black cow
