@@ -13,4 +13,16 @@
 // "Pillow****"
 ```
 
-2) Trailing comas in function parameter list
+2) Trailing comas in function parameter list - now you can place coma after last function parameter and compiler won't throw an error
+```
+function buz (
+    a, 
+    b, 
+    c, 
+    d,
+) {
+    console.log(a)
+}
+```
+apperently it improves readability in version control system
+
