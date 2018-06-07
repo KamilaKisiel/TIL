@@ -26,3 +26,41 @@ function buz (
 ```
 apperently it improves readability in version control system
 
+3) Object.values and object.entries
+
+To iterate through objects keys and values pairs we used so far method Object.keys
+```
+let obj = {
+    username0: 'Bolek',
+    username1: 'Lolek',
+    username2: 'Tola'
+}
+
+Object.keys(obj).forEach((key, index) => {
+    console.log(key, obj[key])
+})
+
+//outcome
+username0 Bolek
+username1 Lolek
+username2 Tola
+```
+
+Now we can use simple Object.values
+```
+Object.values(obj).forEach(value => {
+    console.log(value)
+})
+
+//outcome
+Bolek
+Lolek
+Tola
+```
+or
+```
+Object.values(obj);
+
+//outcome
+(3) ["Bolek", "Lolek", "Tola"]
+```
