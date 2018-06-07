@@ -78,6 +78,18 @@ Object.entries(obj).forEach(value => {
 (2) ["username1", "Lolek"]
 (2) ["username2", "Tola"]
 ```
+or simpler
+```
+Object.entries(obj)
+
+//outcome
+[
+["username0", "Bolek"] 
+["username1", "Lolek"] 
+["username2", "Tola"]
+]
+```
+
 and we can play with it by using array methods, like `map`
 ```
 Object.entries(obj).map(value => {
@@ -88,3 +100,39 @@ as we want to create accually username with number of index, so we take Bolek, a
 ```
 (3) ["Bolek0", "Lolek1", "Tola2"]
 ```
+__cute examples__
+String padding:
+```
+const startLine = '     ||<- Start line';
+let turtle = '🐢';
+let rabbit = '🐰';
+```
+Lineup turtle and rabbit at the start line
+```
+turtle = turtle.padStart(9);
+rabbit =rabbit.padStart(9);
+
+console.log(startLine);
+console.log(turtle);
+console.log(rabbit);
+```
+Let the turtle win by
+```
+turtle = turtle.trim().padEnd(9, '=');
+```
+Object.entries:
+```
+let obj = {
+    Hi: 'my',
+    name: 'is',
+    Tola: 'I am',
+    a: 'writer'
+}
+```
+make this a full sentence like this: 
+'Hi my name is Tola I am a writer'
+```
+Object.entries(obj).map(value => value.join(' ')).join(' ');
+```
+
+4) Async await
