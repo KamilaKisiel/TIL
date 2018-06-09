@@ -102,7 +102,7 @@ as we want to create accually username with number of index, so we take Bolek, a
 ```
 __cute examples__
 
-_S_tring padding:
+_String padding_:
 ```
 const startLine = '     ||<- Start line';
 let turtle = '🐢';
@@ -127,7 +127,7 @@ Let the turtle win by
 ```
 turtle = turtle.trim().padEnd(9, '=');
 ```
-_O_bject.entries:
+_Object.entries_:
 ```
 let obj = {
     Hi: 'my',
