@@ -1,4 +1,4 @@
-## what is program (on JS example)?
+## what is programme (on JS example)?
 
 1) allocate memory
 2) parse and execute - read and run commands
@@ -17,7 +17,11 @@ it leades to `synchronous` programming which means that lines of code are execut
 
 *but* as the above statement says it can be non-blocking as well and this is because `javascript run-time environment` which is a part of a browser. part of that environment are web APIs, callback queue and event loop
 
-one of the web API is setTimeout method (others: DOM or AJAX) thanks to which we can get `asynchronous` programm.
+one of the web API is setTimeout method (others: DOM or AJAX) thanks to which we can get `asynchronous` programme.
 so when the engine goes through the code (call stack) and meet setTimeout it triggers `Web API` and relocate that part out from the call stack so it can proceed to the next lines.
 
 after given time (let's say 2 sec) setTimeout is done and goes as a callback to `callback queue`. an `event loop` keeps checking if the call stack is empty and when it is it throws the callback over there to execute the code
+
+*fun fact* 
+
+even though timer is set to 0 seconds the block of code still goes through the process and the programme executes asynchronously
