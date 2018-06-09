@@ -101,7 +101,8 @@ as we want to create accually username with number of index, so we take Bolek, a
 (3) ["Bolek0", "Lolek1", "Tola2"]
 ```
 __cute examples__
-String padding:
+
+_S_tring padding:
 ```
 const startLine = '     ||<- Start line';
 let turtle = '🐢';
@@ -115,12 +116,18 @@ rabbit =rabbit.padStart(9);
 console.log(startLine);
 console.log(turtle);
 console.log(rabbit);
+
+//outcome
+
+     ||<- Start line
+       🐢
+       🐰
 ```
 Let the turtle win by
 ```
 turtle = turtle.trim().padEnd(9, '=');
 ```
-Object.entries:
+_O_bject.entries:
 ```
 let obj = {
     Hi: 'my',
@@ -136,4 +143,5 @@ Object.entries(obj).map(value => value.join(' ')).join(' ');
 ```
 
 4) Async await
+
     tbc....
