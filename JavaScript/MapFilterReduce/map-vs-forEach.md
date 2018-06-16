@@ -1,7 +1,7 @@
 `forEach`
 * iterates trough the elements in array
 * executes a callback for each element
-* doeas not return a value
+* does not return a value
 ```
 const a = [1, 2, 3];
 const doubled = a.forEach((num, index) => {
@@ -12,7 +12,7 @@ const doubled = a.forEach((num, index) => {
 
 `map`
 * iterates trough the elements in an array 
-* map each elemnt to a new elemnt by calling the function on each element
+* maps each elemnt to a new elemnt by calling the function on each element
 * creating a new array as a result 
 ```
 const a = [1, 2, 3];
