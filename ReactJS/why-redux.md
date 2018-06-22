@@ -37,5 +37,5 @@ there are many models which are rendered to the views that can interact with eac
 
 *end of digression*
 
-
+redux === this.state
 
