@@ -19,3 +19,8 @@ action -> reducer -> store -> make changes
 **store** is entire state of the app, which is updated by the action
 
 and react notices state change **makes changes** to the view layer
+
+
+redux uses architectural pattern called **FLUX**
+
+action -> dispatcher ->store -> view
