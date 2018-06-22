@@ -24,3 +24,18 @@ and react notices state change **makes changes** to the view layer
 redux uses architectural pattern called **FLUX**
 
 action -> dispatcher ->store -> view
+
+huge advantage of this approach is "one way data flow"
+
+*digression*
+
+before flux there was **mvc**      - model-view-controller pattern
+
+action -> controller -> models -> views
+
+there are many models which are rendered to the views that can interact with each other and at the end it is hard to kep control over data flow
+
+*end of digression*
+
+
+
