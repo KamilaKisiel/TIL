@@ -26,4 +26,6 @@ SERVER ERROR 5XX
 - one way of sending data to the servers is trough **query strings** parameters(not very safe). you can do that by adding method to the form
 `<form method='GET'>.....</form>` and everything typed into form will be send in query selectors available in url address and also in network tab in dev-tools
 
-- second way of sending data is trough the **body of the request** by adding `POST` method to the form `<form method='POST'>.....</form>`
+- second way of sending data is trough the **body of the request** by adding `POST` method to the form `<form method='POST'>.....</form>`. still data are seen in dev tools
+
+### HTTPS - secured protocol which uses transport leyer security(TLS) or secure socets leyer(SSL)
