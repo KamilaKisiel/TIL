@@ -16,3 +16,5 @@ let obj = JSON.parse('{"name":"John","age":30,"city":"New York"}');
 ```
 let myJSON = JSON.stringify(obj)
 ```
+
+any JavaScript object can be converted to JASON and send to the server and also any JASON received from the server can by cenverted backwards to JS object
