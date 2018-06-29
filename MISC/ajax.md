@@ -1,0 +1,1 @@
+ajax - alows to read from server after the page has loaded and update the page without reloading it; send data in the background while user is inteacting with the website
