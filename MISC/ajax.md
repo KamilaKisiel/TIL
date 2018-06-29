@@ -21,3 +21,17 @@ statusText:""
 type:"cors"
 url:"https://jsonplaceholder.typicode.com/users"
 __proto__:Response
+```
+`fetch` uses his own method `.jason' to convert what we get form server:
+```
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+```
+...and again we receive `promise` to which we can accsess by using `.then`:
+```
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => console.log(data))
+```
+this way we receive our users:
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
