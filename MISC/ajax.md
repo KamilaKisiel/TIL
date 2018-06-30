@@ -36,5 +36,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
 this way we receive our users:
 (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
 
-### Promise (new feature of ES6) is an object that may produce a single value some time in the future
+### Promise (new feature of ES6) is an object that may produce a single value some time in the future. That can be resolved value or a reason that it's not resolved (rejected). Promise can be in one of possible states:
+* fulfilled
+* rejected 
+* pending
+
+
+
 
