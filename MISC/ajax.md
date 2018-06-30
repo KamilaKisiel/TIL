@@ -41,6 +41,27 @@ this way we receive our users:
 * rejected 
 * pending
 
+`callbacks`
+```
+element.addEventListener("click", submitForm)
+```
+*submitForm* in this expression is a `callback`
 
-
-
+```
+// callback ptramid of doom
+movePlayer(100, 'Left', function() {
+    movePlayer(400, 'Left', function() {
+        movePlayer(10, 'Right', function() {
+            movePlayer(330, 'Left', function())
+        });
+    });
+});
+```
+Instead of `callbacks` we can apply promises, like this
+```
+movePlayer(100, 'Left')
+    .then(() => movePlayer(400, 'Left'))
+    .then(() -> movePlayer(10, 'Right'))
+    .then(() => movePlayer(330, 'Left'))
+```
+[go to: Promise](promise.js) 
