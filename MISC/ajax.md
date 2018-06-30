@@ -1,4 +1,4 @@
-ajax(Asynchronous JavaScript and XML) - alows to read from server after the page has loaded and update the page without reloading it; send data in the background while user is inteacting with the website
+### Ajax (Asynchronous JavaScript and XML) - alows to read from server after the page has loaded and update the page without reloading it; send data in the background while user is inteacting with the website
 
 to download data from server we use `fetch` method
 ```
@@ -35,3 +35,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
 ```
 this way we receive our users:
 (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+
+### Promise (new feature of ES6) is an object that may produce a single value some time in the future
+
