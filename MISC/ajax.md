@@ -65,3 +65,5 @@ movePlayer(100, 'Left')
     .then(() => movePlayer(330, 'Left'))
 ```
 [go to: Promise](promise.js) 
+
+`fetch` returns promise that is `pending` and by adding `.then` we are answering to whatever the promise returns with
