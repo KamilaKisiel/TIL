@@ -51,7 +51,7 @@ promise
 /////////////////////////////////////////////
 
 const urls = [
-    'https://jsonplaceholde.typicode.com/users',
+    'https://jsonplaceholder.typicode.com/users',
     'https://jsonplaceholder.typicode.com/posts',
     'https://jsonplaceholder.typicode.com/albums'
 ]
