@@ -6,6 +6,25 @@ const promise = new Promise((resolve, reject) => {
     }
 })
 
+const promise2 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, 'Hiii')
+})
+
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 1000, 'Pookie')
+})
+
+const promise4 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 5000, 'Is it me you looking for?')
+})
+
+Promise.all([promise, promise2, promise3, promise4])
+.then(values => {
+    console.log(values);
+}) // it will logg all of the results after 5sec 
+//cause it waits untill all of the promises resolves
+
+
 promise.then(result => console.log(result)) // Stuf worked
 
 // chaning promises
