@@ -7,3 +7,10 @@ const promise = new Promise((resolve, reject) => {
 })
 
 promise.then(result => console.log(result)) // Stuf worked
+
+// chaning promises
+promise
+    .then(result => result + '!')
+    .then(result2 => {
+        console.log(result2);
+})
