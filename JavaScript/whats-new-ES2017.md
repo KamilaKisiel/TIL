@@ -144,4 +144,4 @@ Object.entries(obj).map(value => value.join(' ')).join(' ');
 
 4) Async await
 
-    tbc....
+it is build on top of the `promises` - async function is a function that returns `promise`
