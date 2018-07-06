@@ -145,3 +145,21 @@ Object.entries(obj).map(value => value.join(' ')).join(' ');
 4) Async await
 
 it is build on top of the `promises` - async function is a function that returns `promise`
+
+_example:_
+````
+//old/current way of dealing with things
+movePlayer(100, 'Left') //distance+direction
+    .then(() => movePlayer(400, 'Left'))
+    .then(() => movePlayer(10, 'Right'))
+    .then(() => movePlayer(330, 'Left'))
+
+//same example with async await
+
+async function playerStart() {
+    const firstMove = await movePlayer(100, 'Left'); //pause
+    await movePlayer(400, 'Left'); //pause
+    await movePlayer(10, 'Right'); //pause
+    await movePlayer(330, 'Left'); //pause
+}
+````
