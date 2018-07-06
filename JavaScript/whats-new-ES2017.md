@@ -163,3 +163,5 @@ async function playerStart() {
     await movePlayer(330, 'Left'); //pause
 }
 ````
+
+`await` keyword - "pause this function untill I have something for you"; awaiting for the response. once the promise is resolved the function moves to the next line
