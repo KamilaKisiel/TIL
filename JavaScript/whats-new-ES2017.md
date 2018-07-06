@@ -165,3 +165,24 @@ async function playerStart() {
 ````
 
 `await` keyword - "pause this function untill I have something for you"; awaiting for the response. once the promise is resolved the function moves to the next line
+
+another, nicer _example:_
+````
+// first old/current way 
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(response => response.json())
+.then(console.log)
+
+//turning it into async function
+
+async function fetchUsers() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await response.json();
+    console.log(data)
+}
+
+fetchUsers();
+// Promise {<pending>}
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+````
