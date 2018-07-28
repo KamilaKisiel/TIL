@@ -7,6 +7,8 @@ const b = 5;
 //$ node script.js
 //9
 
-setTimeout(() => {
-    console.log(a +b);  
-},6000)
+// setTimeout(() => {
+//     console.log(a +b);  
+// },6000)
+
+console.log(__dirname); // gives the path for file directory 
