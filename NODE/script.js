@@ -1,8 +1,10 @@
-const script2 = require('./script2.js');
+const script2 = require('fs');
 
-const a = script2.largeNumber;
-const b = 5;
-console.log(a +b);
+console.log(script2)
+
+// const a = script2.largeNumber;
+// const b = 5;
+// console.log(a +b);
 
 //in terminal:
 //Admin@HP MINGW64 ~/TIL/NODE (master)
