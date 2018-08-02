@@ -15,11 +15,7 @@ app.get('/profile', (req, res) => {
 
 app.post('/profile', (req, res) => {
     console.log(req.body)
-    const user = {
-        name: "Sally",
-        hobby: "soccer"
-    }
-    res.send(user)
+    res.send('Success')
 });
 
 app.listen(3000);
