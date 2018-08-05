@@ -5,3 +5,5 @@ REST API defines a set of functions which developer can perform request and reci
 `DELETE` to remove a resource
 
 REST API is approach to communications that agree on a set of rules so every one play out nicely
+
+the http request (whole url) is a verb (get, post, put...) and everything after the slash is a noun, for example /profile, /home etc.
