@@ -35,6 +35,7 @@ function lookUpProfile(name, prop){
             }
         }
     }
+    return "No such contact"
     }
     
     lookUpProfile("Asterix", "likes"); // => ["Boars", "Fighting", "Potion"]
