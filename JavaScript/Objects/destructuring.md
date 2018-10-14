@@ -51,3 +51,26 @@ function getMaxOfTmrw(forecast) {
 
 console.log(getMaxOfTmrw(LOCAL_FORECAST)); // 84.6
 ````
+
+#### destructuring with arrays
+````
+let a = 8, b = 6;
+(() => {
+  "use strict";
+  [b, a] = [a, b]
+})();
+console.log(a); // 6
+console.log(b); // 8
+````
+....with the `rest operator`:
+````
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  "use strict";
+  const [a, b, ...arr] = list;
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(arr); // [3,4,5,6,7,8,9,10]
+console.log(source); // [1,2,3,4,5,6,7,8,9,10];
+````
