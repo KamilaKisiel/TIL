@@ -11,8 +11,8 @@ let petString = "James has a pet cat.";
 let petRegex = /dog|cat|bird|fish/; 
 let result = petRegex.test(petString);
 ```
+`i` flag ignores case size
 ```
-// ignores case - i flag
 let myString = "whatsOnTheOtherSide";
 let otherRegex = /whatsOnTheOtherSide/i;
 let result = otherRegex.test(myString);
@@ -23,4 +23,10 @@ let result = otherRegex.test(myString);
 let extractStr = "Extract the word 'coding' from this string.";
 let codingRegex = /coding/; 
 let result = extractStr.match(codingRegex); 
+```
+`g` flag returns multiple matches
+```
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; // you can have multiple flags on regex
+let result = twinkleStar.match(starRegex); 
 ```
