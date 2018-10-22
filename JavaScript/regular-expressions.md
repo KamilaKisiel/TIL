@@ -30,3 +30,10 @@ let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/gi; // you can have multiple flags on regex
 let result = twinkleStar.match(starRegex); 
 ```
+
+### wildcard character - to match any missing character
+```
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; 
+let result = unRegex.test(exampleStr);
+```
