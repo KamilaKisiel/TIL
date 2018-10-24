@@ -57,3 +57,9 @@ let quoteSample = "Blueberry 3.141592653s are delicious.";
 let myRegex = /[h-s2-6]/ig;
 let result = quoteSample.match(myRegex);
 ```
+### negated character sets - using `^` to exclude characters
+```
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/ig; 
+let result = quoteSample.match(myRegex);
+```
