@@ -44,3 +44,10 @@ let vowelRegex = /[aeiou]/ig;
 let result = quoteSample.match(vowelRegex);
 ```
 checks both upper- and lowercase in the string `quoteSample`.
+
+to check letters from alphabet we use hyphen `-`
+```
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig;
+let result = quoteSample.match(alphabetRegex);
+```
