@@ -63,3 +63,19 @@ let quoteSample = "3 blind mice.";
 let myRegex = /[^aeiou0-9]/ig; 
 let result = quoteSample.match(myRegex);
 ```
+
+### lazy and greedy regexes
+
+Regular expressions are by default `greedy` which means they return largest possible sub-string that maches pattern:
+```
+let text = 'titanic';
+let myRegex = /t[a-z]*i/;
+let result = text.match(myRegex); // titani
+```
+
+to make them `lazy` and find shortest sub-string possible, we need to add `?`
+```
+let text = 'titanic';
+let myRegex = /t[a-z]*?i/;
+let result = text.match(myRegex);
+```
