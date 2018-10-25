@@ -77,5 +77,5 @@ to make them `lazy` and find shortest sub-string possible, we need to add `?`
 ```
 let text = 'titanic';
 let myRegex = /t[a-z]*?i/;
-let result = text.match(myRegex);
+let result = text.match(myRegex); // ti
 ```
