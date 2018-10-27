@@ -61,7 +61,13 @@ let result = quoteSample.match(myRegex);
 ```
 let quoteSample = "3 blind mice.";
 let myRegex = /[^aeiou0-9]/ig; 
-let result = quoteSample.match(myRegex);
+let result = quoteSample.match(myRegex); // [" ", "b", "l", "n", "d", " ", "m", "c", "."]
+```
+### Match Ending String Patterns - with `$` sign at the end of the regex
+```
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; 
+let result = lastRegex.test(caboose); // returns true
 ```
 
 ### lazy and greedy regexes
