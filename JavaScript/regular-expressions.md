@@ -61,7 +61,13 @@ let result = quoteSample.match(myRegex);
 ```
 let quoteSample = "3 blind mice.";
 let myRegex = /[^aeiou0-9]/ig; 
-let result = quoteSample.match(myRegex);
+let result = quoteSample.match(myRegex); // [" ", "b", "l", "n", "d", " ", "m", "c", "."]
+```
+### Match Ending String Patterns - with `$` sign at the end of the regex
+```
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; 
+let result = lastRegex.test(caboose); // returns true
 ```
 
 ### lazy and greedy regexes
@@ -78,4 +84,18 @@ to make them `lazy` and find shortest sub-string possible, we need to add `?`
 let text = 'titanic';
 let myRegex = /t[a-z]*?i/;
 let result = text.match(myRegex); // ti
+```
+
+### Match All Letters and Numbers with `\w` shortcut
+`\w` stands for `[A-Za-z0-9_]` characters
+```
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g;
+let result = quoteSample.match(alphabetRegexV2).length // 31
+```
+the oposite result which means non alphanumeric characters is obtained by `\W` shortcut which stands for `[^A-Za-z0-9_]`
+```
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; 
+let result = quoteSample.match(nonAlphabetRegex).length; // 6
 ```
