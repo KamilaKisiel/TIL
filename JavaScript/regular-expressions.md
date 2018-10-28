@@ -85,7 +85,7 @@ let text = 'titanic';
 let myRegex = /t[a-z]*?i/;
 let result = text.match(myRegex); // ti
 ```
-
+## Shortcuts
 ### Match All Letters and Numbers with `\w` shortcut
 `\w` stands for `[A-Za-z0-9_]` characters
 ```
@@ -98,4 +98,10 @@ the oposite result which means non alphanumeric characters is obtained by `\W` s
 let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g; 
 let result = quoteSample.match(nonAlphabetRegex).length; // 6
+```
+### Match All Numbers with `\d` shortcut for `[0-9]`
+```
+let numString = "Your sandwich will be $5.00";
+let numRegex = /\d/g; 
+let result = numString.match(numRegex).length // 3
 ```
