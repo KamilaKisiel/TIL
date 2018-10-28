@@ -133,3 +133,10 @@ let sample = "Whitespace is important in separating words";
 let countNonWhiteSpace = /\S/g;
 let result = sample.match(countNonWhiteSpace); // array with all characters except whitespace
 ```
+
+### Check for All or None
+```
+let favWord = "favorite";
+let favRegex = /favou?rite/; 
+let result = favRegex.test(favWord); // true
+```
