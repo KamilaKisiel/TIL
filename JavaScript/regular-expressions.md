@@ -105,3 +105,9 @@ let numString = "Your sandwich will be $5.00";
 let numRegex = /\d/g; 
 let result = numString.match(numRegex).length // 3
 ```
+all non-numbers with \D shortcut which equals to `[^0-9]`
+```
+let numString = "Your sandwich will be $5.00";
+let noNumRegex = /\D/g; 
+let result = numString.match(noNumRegex).length; // 24
+```
