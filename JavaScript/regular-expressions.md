@@ -127,3 +127,9 @@ let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g;
 let result = sample.match(countWhiteSpace); // [" ", " ", " ", " ", " "]
 ```
+### look everything else but whitespace
+```
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace); // array with all characters except whitespace
+```
