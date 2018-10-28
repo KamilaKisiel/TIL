@@ -120,3 +120,10 @@ let username = "JackOfAllTrades";
 let userCheck = /^[a-z]{2,}\d*$/i;
 let result = userCheck.test(username);
 ```
+
+### look for a whitespace in a string
+```
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g;
+let result = sample.match(countWhiteSpace); // [" ", " ", " ", " ", " "]
+```
