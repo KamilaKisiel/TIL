@@ -111,3 +111,12 @@ let numString = "Your sandwich will be $5.00";
 let noNumRegex = /\D/g; 
 let result = numString.match(noNumRegex).length; // 24
 ```
+### match username with provided restrictions
+
+`\d*$\i` - The only numbers in the username have to be at the end. \d$ There can be zero or more of them at the end * and letters can be lowercase and uppercase. i
+`^[a-z]{2,}` - Usernames have to be at least two characters long. {2,} A two-letter username can only use alphabet letter characters. ^[a-z]
+```
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]{2,}\d*$/i;
+let result = userCheck.test(username);
+```
