@@ -140,3 +140,14 @@ let favWord = "favorite";
 let favRegex = /favou?rite/; 
 let result = favRegex.test(favWord); // true
 ```
+### Positive and Negative Lookahead 
+
+positive lookahead (?=...)
+negative lookahead (?!...)
+
+simple password checker - greater than 5 characters long and have two consecutive digits.
+```
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
+let result = pwRegex.test(sampleWord);
+```
