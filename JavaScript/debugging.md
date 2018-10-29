@@ -1,3 +1,17 @@
+### Debugging
+
+there are 3 types of common errors
+1) syntax errors that prevent a program from running, 
+2) runtime errors when code fails to execute or has unexpected behavior, and 
+3) semantic (or logical) errors when code doesn't do what it's meant to
+
+
+
+
+
+
+
+
 try to understand/debug this function:
 ```
 const flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => a.concat(b), []);
