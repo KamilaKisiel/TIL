@@ -151,3 +151,13 @@ let sampleWord = "astronaut";
 let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
 let result = pwRegex.test(sampleWord);
 ```
+
+### search and replace
+
+```
+let huhText = "This sandwich is good.";
+let fixRegex = /good/; 
+let replaceText = "okey-dokey"; 
+let result = huhText.replace(fixRegex, replaceText);
+// This sandwich is okey-dokey
+```
