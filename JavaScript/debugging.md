@@ -6,8 +6,21 @@ there are 3 types of common errors
 3) semantic (or logical) errors when code doesn't do what it's meant to
 
 
-
-
+### `typeof` to check the data structure, or type of a variable
+examples:
+```
+console.log(typeof ""); // outputs "string"
+console.log(typeof 0); // outputs "number"
+console.log(typeof []); // outputs "object"
+console.log(typeof {}); // outputs "object"
+```
+```
+let seven = 7;
+let three = "3";
+console.log(seven + three); // 73
+console.log(typeof seven) // number
+console.log(typeof three) // string
+```
 
 
 
