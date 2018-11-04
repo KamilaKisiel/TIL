@@ -28,3 +28,13 @@ function popShift(arr) {
 
 console.log(popShift(['challenge', 'is', 'not', 'complete'])); // ['challenge', 'complete']
 ```
+### Removing any number of consecutive elements from anywhere in an array with `splice()`
+
+```
+//goal: return value of 10
+function sumOfTen(arr) {
+  arr.splice(1,2)
+  return arr.reduce((a, b) => a + b);
+}
+console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
+```
