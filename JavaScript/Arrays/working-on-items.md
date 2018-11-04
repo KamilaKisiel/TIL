@@ -52,3 +52,4 @@ colorScheme = colorChange(colorScheme, 2, '#332327');
 // we have removed '#bb7e8c' and added '#332327' in its place
 // colorScheme now equals ['#878787', '#a08794', '#332327', '#c9b6be', '#d1becf']
 ```
+This function takes an array of hex values, an index at which to remove an element, and the new color to replace the removed element with
