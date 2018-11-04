@@ -53,3 +53,14 @@ colorScheme = colorChange(colorScheme, 2, '#332327');
 // colorScheme now equals ['#878787', '#a08794', '#332327', '#c9b6be', '#d1becf']
 ```
 This function takes an array of hex values, an index at which to remove an element, and the new color to replace the removed element with
+
+removing first two elements from arr and adding two others in their respective places:
+```
+function htmlColorNames(arr) {
+  arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond")
+  return arr;
+} 
+ 
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurqoise', 'FireBrick']));
+// ["DarkSalmon", "BlanchedAlmond", "LavenderBlush", "PaleTurqoise", "FireBrick"]
+```
