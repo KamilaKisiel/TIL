@@ -64,3 +64,14 @@ function htmlColorNames(arr) {
 console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurqoise', 'FireBrick']));
 // ["DarkSalmon", "BlanchedAlmond", "LavenderBlush", "PaleTurqoise", "FireBrick"]
 ```
+
+### Copy Array Items Using `slice()`
+
+`slice()` takes 2 parameters — the first is the index at which to begin extraction, and the second is the index at which to stop extraction
+```
+function forecast(arr) {
+  
+  return arr.slice(2,4);
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'])); // ['warm', 'sunny']
+```
