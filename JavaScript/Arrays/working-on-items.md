@@ -90,3 +90,13 @@ console.log(copyMachine([true, false, true], 2));
 // 0: (3) [true, false, true]
 // 1: (3) [true, false, true]
 ```
+with `spread operator` we can combine arrays
+```
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; 
+  return sentence;
+}
+console.log(spreadOut()); 
+// ['learning', 'to', 'code', 'is', 'fun'].
+```
