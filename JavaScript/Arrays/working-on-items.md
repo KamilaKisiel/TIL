@@ -75,3 +75,18 @@ function forecast(arr) {
 }
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'])); // ['warm', 'sunny']
 ```
+### Spread operator
+`spread operator` allows us to easily copy all of an array's elements
+```
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    newArr.push([...arr])
+    num--;
+  }
+  return newArr;
+}
+console.log(copyMachine([true, false, true], 2));
+// 0: (3) [true, false, true]
+// 1: (3) [true, false, true]
+```
