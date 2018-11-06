@@ -100,3 +100,21 @@ function spreadOut() {
 console.log(spreadOut()); 
 // ['learning', 'to', 'code', 'is', 'fun'].
 ```
+### indexOf()
+`indexOf()`allows us to quickly and easily check for the presence of an element on an array
+```
+function quickCheck(arr, elem) {
+  if (arr.indexOf(elem) >= 0){
+    return true
+  }
+  return false
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms')); //false
+```
+solution with `ternary operator`:
+```
+function quickCheck(arr, elem) {
+return arr.indexOf(elem) >= 0 ? true : false;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms')); // false
+```
