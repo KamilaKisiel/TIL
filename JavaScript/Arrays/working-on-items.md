@@ -132,3 +132,16 @@ function filteredArray(arr, elem) {
 };
 console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3)); // []
 ```
+### adding key-value pairs to objects
+```
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+foods['bananas'] = 13;
+foods['grapes'] = 35;
+foods['strawberries'] = 27 
+
+console.log(foods); // {apples: 25, oranges: 32, plums: 28, bananas: 13, grapes: 35, strawberries:27}
