@@ -196,3 +196,36 @@ delete foods.strawberries;
 
 console.log(foods); // {apples: 25, bananas: 13, grapes: 35}
 ```
+### Iterate through object keys
+with for...in statement
+```
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+function countOnline(obj) {
+  let count = 0;
+for (let name in users) {
+ if (users[name].online === true){
+   count++;
+   }
+};
+return count;
+}
+
+console.log(countOnline(users)); //2
+```
