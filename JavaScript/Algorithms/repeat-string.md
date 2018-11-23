@@ -32,3 +32,11 @@ function repeatStringNumTimes(str, num) {
 * We check if num is negative and return an empty string if true.
 * Then we check if it’s equal to 1 and in that case we return the string itself.
 * If not, we add the string to a call of our function with num being decreased by 1, which will add another str and another.. until eventually num is 1. And return that whole process.
+ Solution with ternary operator
+ ```
+ function repeatStringNumTimes(str, num) {
+  return num > 0 ? str.repeat(num) : '';
+}
+
+repeatStringNumTimes("abc", 3);
+```
