@@ -13,3 +13,7 @@ function findElement(arr, func) {
 }
 findElement([1, 2, 3, 4], num => num % 2 === 0); // 2
 ```
+* Challenge asks us to look through array. This is done using a `for` loop.
+* The `num` variable is being passed into the function, so we set it to each index in our array.
+* The pre-defined function already checks each number for us, so if it is “true”, we return that num.
+* If none of the numbers in the array pass the function’s test, we return undefined.
