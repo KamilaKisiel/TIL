@@ -8,3 +8,4 @@ function booWho(bool) {
 booWho(false); //true
 ```
 
+The algorithm uses typeof operator to check if the variable is a boolean. If it is, it will return true. Otherwise, if it is any other type it will return false.
