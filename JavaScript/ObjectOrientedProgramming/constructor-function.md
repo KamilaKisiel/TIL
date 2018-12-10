@@ -14,3 +14,14 @@ function Dog() {
 ```
 let hound = new Dog()
 ```
+
+Constructor that accepts parameters:
+```
+function Dog(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 4
+}
+let terrier = new Dog("Camper", "yellow")
+// terrier {name: "Camper", color: "yellow", numLegs: 4}
+```
