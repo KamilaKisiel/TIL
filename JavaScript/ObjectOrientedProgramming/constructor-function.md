@@ -25,3 +25,6 @@ function Dog(name, color) {
 let terrier = new Dog("Camper", "yellow")
 // terrier {name: "Camper", color: "yellow", numLegs: 4}
 ```
+new object created by `constructor` function is always an instance of that `constructor`
+to verify if new object is created by `constructor` we can use `instanceof` operator. it returns `true` or `false` as a result
+```
