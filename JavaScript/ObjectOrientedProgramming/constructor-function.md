@@ -36,7 +36,7 @@ let myHouse = new House(4);
 
 myHouse instanceof House; // true
 ```
-`own` properies - defined directly on the instance object
+`own` properties - defined directly on the instance object
 ```
 function Bird(name) {
   this.name = name;
@@ -52,4 +52,15 @@ for(let property in canary){
   }
 }
 // ["name", "numLegs"]
+```
+`prototype` properties - an object that is shared among ALL instances of constructor function
+```
+function Bird(name) {
+  this.name = name;
+}
+
+Bird.prototype.numLegs = 2;
+
+let canary = new Bird("Tweety");
+console.log(canary.numLegs) //2
 ```
