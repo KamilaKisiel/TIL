@@ -85,3 +85,21 @@ for (let property in beagle) {
   }
 console.log(ownProps); // prints ["name"]
 console.log(prototypeProps); // prints ["numLegs"]
+```
+
+`constructor` property - allows to check a type of object
+```
+function Dog(name) {
+  this.name = name;
+}
+
+function joinDogFraternity(candidate) {
+  if(candidate.constructor === Dog) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+```
+** it is better to use `instaceof` method **
