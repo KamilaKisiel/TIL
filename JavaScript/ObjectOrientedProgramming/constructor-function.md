@@ -102,4 +102,4 @@ function joinDogFraternity(candidate) {
   }
 }
 ```
-** it is better to use `instaceof` method **
+** it is better to use `instanceof` method **
