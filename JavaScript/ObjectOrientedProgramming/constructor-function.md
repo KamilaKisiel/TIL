@@ -103,3 +103,19 @@ function joinDogFraternity(candidate) {
 }
 ```
 ** it is better to use `instanceof` method **
+
+setting up `prototype` in new object
+```
+function Dog(name) {
+  this.name = name; 
+}
+
+Dog.prototype = {
+  numLegs: 2,
+  eat: function(){
+    console.log('nom nom nom');
+  },
+  describe: function(){
+    console.log("My name is " + this.name);
+};
+```
