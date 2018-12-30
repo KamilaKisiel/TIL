@@ -25,3 +25,28 @@ Bird.prototype.numLegs = 2;
 let canary = new Bird("Tweety");
 console.log(canary.numLegs) //2
 ```
+Creating object by using `new` operator
+```
+let animal = new Animal();
+```
+have some disadvanteges and as an alternative we can use
+```
+let animal = Object.create(Animal.prototype)
+```
+`Object.create(obj)` creates a new object, and sets `obj` as the new object's `prototype`
+```
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal, 
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+let duck = Object.create(Animal.prototype);
+let beagle = Object.create(Animal.prototype);
+
+duck.eat(); //nom nom nom
+beagle.eat(); //nom nom nom
+```
