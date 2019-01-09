@@ -17,3 +17,5 @@ Functional programming is about:
 2) Pure functions - the same input always gives the same output
 
 3) Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+
+`Callbacks` are the functions that are slipped or passed into another function to decide the invocation of that function. You may have seen them passed to other methods, for example in `filter`, the callback function tells JavaScript the criteria for how to filter an array.
