@@ -24,3 +24,18 @@ Functions that can be assigned to a variable, passed into another function, or r
 
 The functions that take a function as an argument, or return a function as a return value are called `higher order` functions.
 When the functions are passed in to another function or returned from another function, then those functions which gets passed in or returned can be called a `lambda`
+
+### Pure function
+`pure function` does not cause any *side effects*
+```
+var fixedValue = 4;
+
+function incrementer () {
+  return fixedValue + 1
+ 
+}
+
+var newValue = incrementer(); // Should equal 5
+console.log(fixedValue); // Should print 4
+```
+changing or altering in functional programming is called `mutation`
