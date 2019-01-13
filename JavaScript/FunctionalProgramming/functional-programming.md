@@ -38,4 +38,5 @@ function incrementer () {
 var newValue = incrementer(); // Should equal 5
 console.log(fixedValue); // Should print 4
 ```
-changing or altering in functional programming is called `mutation`
+changing or altering in functional programming is called `mutation` and using functional programming helps avoid mutations and side effects.
+Another principle of functional programming is to always declare your dependencies *explicitly* so variables or objects should be passed into the function as an argument.
