@@ -40,3 +40,41 @@ console.log(fixedValue); // Should print 4
 ```
 changing or altering in functional programming is called `mutation` and using functional programming helps avoid mutations and side effects.
 Another principle of functional programming is to always declare your dependencies *explicitly* so variables or objects should be passed into the function as an argument.
+
+an example of global array that is not modified by the given functions:
+```
+var bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+function add (bookList, bookName) {
+  var newBookList = [...bookList];
+   newBookList.push(bookName);
+  return newBookList
+}
+
+function remove (bookList, bookName) {
+  var newBookList = [...bookList];
+  if (newBookList.indexOf(bookName) >= 0) {
+    
+    newBookList.splice(newBookList.indexOf(bookName), 1);
+    return newBookList
+    }
+}
+
+var newBookList = add(bookList, 'A Brief History of Time');
+var newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
+var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+
+console.log(bookList);
+```
+more elegant solution:
+```
+function add (list,bookName) {
+  return [...list, bookName];
+}
+
+function remove (list,bookName) {
+  if (list.indexOf(bookName) >= 0) {
+    return list.filter((item) => item !== bookName);
+    }
+}
+```
