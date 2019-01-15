@@ -79,3 +79,9 @@ console.log(rating); // [{title: "Inception", rating: "8.8"}, {title: "Interstel
 **.filter()**
 `filter` method returns a new array which is at most as long as the original array, but usually has fewer items. It takes each element of the array and if an element returns true based on the criteria in the callback function, then it is included in the new array.
 ```
+var filteredList = watchList.map(function(e) {
+  return {title: e["Title"], rating: e["imdbRating"]}
+}).filter((e) => e.rating >= 8);
+
+console.log(filteredList); [{title: "Inception", rating: "8.8"}, {title: "Interstellar", rating: "8.6"}, {title: "The Dark Knight", rating: "9.0"}, {title: "Batman Begins", rating: "8.3"}]
+```
