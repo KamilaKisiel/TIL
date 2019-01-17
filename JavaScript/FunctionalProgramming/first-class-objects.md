@@ -95,3 +95,11 @@ function sliceArray(anim, beginSlice, endSlice) {
 var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3); // ["Dog", "Tiger"]
 ```
+
+**.splice()**
+`splice` method takes arguments for the index of where to start removing items, then the number of items to remove. If the second argument is not provided, the default is to remove items through the end. However, the `splice` method mutates the original array it is called on
+```
+var cities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+cities.splice(3, 1); // "London"
+cities = ["Chicago", "Delhi", "Islamabad", "Berlin"]
+```
