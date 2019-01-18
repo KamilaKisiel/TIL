@@ -103,3 +103,13 @@ var cities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 cities.splice(3, 1); // "London"
 cities = ["Chicago", "Delhi", "Islamabad", "Berlin"]
 ```
+**.concat()**
+the `concat` method is called on one array, then another array is provided as the argument to concat, which is added to the end of the first array. It returns a new array and does not mutate either of the original arrays.
+```
+function nonMutatingConcat(original, attach) {
+  return original.concat(attach)
+}
+var first = [1, 2, 3];
+var second = [4, 5];
+nonMutatingConcat(first, second);
+```
