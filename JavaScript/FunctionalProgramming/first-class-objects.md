@@ -75,8 +75,10 @@ var watchList = [
 
 var rating = watchList.map((item) => ({"title": item["Title"], "rating": item["imdbRating"]}));
 console.log(rating); // [{title: "Inception", rating: "8.8"}, {title: "Interstellar", rating: "8.6"}, {title: "The Dark Knight", rating: "9.0"}, {title: "Batman Begins", rating: "8.3"}, {title: "Avatar", rating: "7.9"}]
+```
 
 **.filter()**
+
 `filter` method returns a new array which is at most as long as the original array, but usually has fewer items. It takes each element of the array and if an element returns true based on the criteria in the callback function, then it is included in the new array.
 ```
 var filteredList = watchList.map(function(e) {
@@ -87,6 +89,7 @@ console.log(filteredList); [{title: "Inception", rating: "8.8"}, {title: "Inters
 ```
 
 **.slice()**
+
 The `slice` method returns a copy of certain elements of an array. It can take two arguments, the first gives the index of where to begin the slice, the second is the index for where to end the slice (and it's non-inclusive). If the arguments are not provided, the default is to start at the beginning of the array through the end, which is an easy way to make a copy of the entire array. The `slice` method does not mutate the original array, but returns a new one.
 ```
 function sliceArray(anim, beginSlice, endSlice) {
@@ -97,6 +100,7 @@ sliceArray(inputAnim, 1, 3); // ["Dog", "Tiger"]
 ```
 
 **.splice()**
+
 `splice` method takes arguments for the index of where to start removing items, then the number of items to remove. If the second argument is not provided, the default is to remove items through the end. However, the `splice` method mutates the original array it is called on
 ```
 var cities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
@@ -104,6 +108,7 @@ cities.splice(3, 1); // "London"
 cities = ["Chicago", "Delhi", "Islamabad", "Berlin"]
 ```
 **.concat()**
+
 the `concat` method is called on one array, then another array is provided as the argument to concat, which is added to the end of the first array. It returns a new array and does not mutate either of the original arrays.
 ```
 function nonMutatingConcat(original, attach) {
@@ -115,9 +120,13 @@ nonMutatingConcat(first, second);
 ```
 
 **.push()**
+
 `Push` adds an item to the end of the same array it is called on, which mutates that array.
 ```
 var arr = [1, 2, 3];
 arr.push([4, 5, 6]);
 // arr is changed to [1, 2, 3, [4, 5, 6]] - Not the functional programming way!!!
 ```
+
+
+
