@@ -162,4 +162,16 @@ this example uses another arguments of `reduce`:
 `index` - refers to the number of times the reducer has looped over the array
 `array` - array itself
 
+**.sort()**
+
+`sort` method sorts the elements of an array according to the callback function
+```
+function ascendingOrder(arr) {
+  return arr.sort(function(a, b) {
+    return a - b;
+  });
+}
+ascendingOrder([1, 5, 2, 3, 4]); // [1, 2, 3, 4, 5]
+```
+
 
