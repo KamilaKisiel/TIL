@@ -127,6 +127,39 @@ var arr = [1, 2, 3];
 arr.push([4, 5, 6]);
 // arr is changed to [1, 2, 3, [4, 5, 6]] - Not the functional programming way!!!
 ```
+**.reduce()**
 
+`Reduce` method is a corner stone of functional programming. We use it when we have an array of amounts and you want to add them all up.
+```
+const euros = [29.76, 41.85, 46.5];
+const sum = euros.reduce((total, amount) => total + amount); 
+sum // 118.11
+```
+ES5 solution:
+```
+var euros = [29.76, 41.85, 46.5]; 
+var sum = euros.reduce( function(total, amount){
+  return total + amount
+});
+sum // 118.11
+```
+`Reduce` accepts two parameters: the `total` and the current `amount`. 
+
+With `reduce` we can calculate an avarage as well:
+```
+const euros = [29.76, 41.85, 46.5];
+const average = euros.reduce((total, amount, index, array) => {
+  total += amount;
+  if( index === array.length-1) { 
+    return total/array.length;
+  }else { 
+    return total;
+  }
+});
+average // 39.37
+```
+this example uses another arguments of `reduce`:
+`index` - refers to the number of times the reducer has looped over the array
+`array` - array itself
 
 
