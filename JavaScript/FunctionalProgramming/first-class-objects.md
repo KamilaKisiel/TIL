@@ -194,3 +194,12 @@ function splitify(str) {
 }
 splitify("Hello World,I-am code"); // ["Hello", "World", "I", "am", "code"]
 ```
+**.join()**
+
+The `join` method is used to join the elements of an array together to create a string
+```
+function sentensify(str) {
+    return str.split(/\W/).join(' '); 
+}
+sentensify("May-the-force-be-with-you"); // "May the force be with you"
+```
