@@ -203,3 +203,17 @@ function sentensify(str) {
 }
 sentensify("May-the-force-be-with-you"); // "May the force be with you"
 ```
+
+**combining few methods at once**
+```
+var globalTitle = "Winter Is Coming";
+
+function urlSlug(title) {
+return title.split(/\W/).filter((obj)=>{
+    return obj !=='';
+  }).join('-').toLowerCase();  
+  
+}
+
+var winterComing = urlSlug(globalTitle); //"winter-is-coming"
+```
