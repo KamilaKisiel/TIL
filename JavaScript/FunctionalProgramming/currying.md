@@ -11,3 +11,8 @@ function add(x) {
 }
 add(10)(20)(30); //60
 ```
+we can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. example:
+```
+var funcForY = add(10)
+console.log(funcForY(20)(30)) //60
+```
