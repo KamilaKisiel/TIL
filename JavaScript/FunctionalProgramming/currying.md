@@ -14,5 +14,14 @@ add(10)(20)(30); //60
 we can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. example:
 ```
 var funcForY = add(10)
-console.log(funcForY(20)(30)) //60
+console.log(funcForY(20)(30)) // 60
 ```
+Similarly, `partial application` can be described as applying a few arguments to a function at a time and returning another function that is applied to more arguments.
+```
+ function impartial(x,y,z){
+   return x+y+z
+ }
+
+ var partialFn = impartial.bind(this, 20, 30)
+ partialFn(10); // 60
+ ```
