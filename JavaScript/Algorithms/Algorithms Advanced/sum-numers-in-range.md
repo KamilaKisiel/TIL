@@ -9,7 +9,7 @@ function sumAll(arr) {
   return sum;
 }
 
-sumAll([1, 4]);
+sumAll([1, 4]); //10
 ```
 Code explanation:
 
