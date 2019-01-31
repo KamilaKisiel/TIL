@@ -29,3 +29,11 @@ function translatePigLatin(str) {
 translatePigLatin("consonant");
 ```
 
+* isConsonant() is used to check if a character is a consonant.
+* If first character is vowel, add `way` to end of string and return it.
+* If first character is not a vowel:
+
+    * Split string into array using split().
+    * Push all consonants to end of array with help of shift() and push().
+    * Convert array to string using join() and add ay to end of string. Return it.
+
