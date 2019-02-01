@@ -28,4 +28,8 @@ function myReplace(str, before, after) {
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 // "A quick brown fox leaped over the lazy dog"
 ```
-
+* In this solution, regular expression `[A-Z]` is used to check if character is uppercase.
+* Create a new regular expression object, `re`.
+* If first letter of `before` is capitalized, change the first letter of `after` to uppercase.
+* Replace `before` with `after` in the string.
+* Return the new string.
