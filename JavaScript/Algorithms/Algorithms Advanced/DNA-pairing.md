@@ -32,9 +32,32 @@ function pairElement(str) {
       return paired;
 }
 
-pairElement("GCG");
+pairElement("GCG"); // [["G", "C"], ["C", "G"], ["G", "C"]]
 ```
 
 * The program is very simple, the best solution that I have come up with is to use a switch to catch all the possible four elements. Using if statements would take too much code. You could also use Regular Expressions.
 * Since we have to the original and the pair, I decided to take all four cases instead of the base two.
 * Create an empty array and use the search function to push the right values to the array and return them.
+
+```
+    function pairElement(str) {
+    //create object for pair lookup
+    var pairs = {
+      "A": "T",
+      "T": "A",
+      "C": "G",
+      "G": "C"
+    }
+    //split string into array of characters
+    var arr = str.split("");
+    //map character to array of character and matching pair
+    return arr.map(x => [x,pairs[x]]);
+  }
+
+  //test here
+  pairElement("GCG");
+  ```
+
+* First define an object with all pair possibilities, this allows us to easily find by key or value.
+* Split str into a characters array so we can use each letter to find its pair.
+* Use the map function to map each character in the array to an array with the character and it’s matching pair, creating a 2D array.
