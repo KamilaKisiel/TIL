@@ -37,3 +37,10 @@ function sumPrimes(num) {
 
 sumPrimes(10); //17 (2,3,5,7)
 ```
+
+* Create a function that generates the numbers from 1 to `num` and check if they are prime along the way.
+* Declare the variables that will be needed.
+* Start with 2, if it has not been marked and added to the sieve array then it is a prime and we add it to the prime array.
+* Add the others to the sieve array.
+* Return the primes
+* Loop through the returned array and add all the elements to then return the final value.
