@@ -30,3 +30,7 @@ function smallestCommons(arr) {
 
 smallestCommons([1,5]); //60
 ```
+* The first, basic solution requires over 2,000 loops to calculate the test case `smallestCommons([1,13])`, and over 4 million loops to calculate `smallestCommons([1,25])`. This solution evaluates `smallestCommons([1,13])` in around 20 loops and smallestCommons([1,25]) in 40, by using a more efficient algorithm.
+* Make an empty array range.
+* All numbers between the given range are pushed to range using a `for` loop.
+* The next block of code implements the Euclidean algorithm, which is used for finding smallest common multiples.
