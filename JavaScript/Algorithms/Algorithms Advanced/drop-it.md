@@ -19,3 +19,6 @@ function dropElements(arr, func) {
 // test here
 dropElements([1, 2, 3, 4], function(n) {return n >= 3;}) // [3, 4]
 ```
+* Create a for loop to check each element.
+* Then check for the function given if true then stop, otherwise remove that element.
+* Return the array.
