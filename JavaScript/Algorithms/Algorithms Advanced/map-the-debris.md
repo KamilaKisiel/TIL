@@ -31,3 +31,12 @@ function orbitalPeriod(arr) {
 
 orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]); {name: "spuutnik", orbitalPeriod:86400}
 ```
+* GM and earthRadius are both given to us.
+* To make the code easier to edit and read, each part of the equation is written separately.
+* Create newArr to store the `orbPeriod`‘s.
+* a is 2 times pi. The part that is a constant is on the global scope while the rest is part of a function.
+* Create a function, `gerOrbPeriod()` that will do the required work for any amount of objects.
+* c is (earthRadius + avgAlt) to the cube.
+* b is the square root of c divided by GM.
+* Create orbPeriod to store the product of a and b, with the `Math.round()` function applied to round up to the next whole number.
+* Then we delete the key avgAlt, and add the new key and its value.
