@@ -8,3 +8,9 @@ This is important because without your `document ready function`, your code may 
 
 
 jQuery also has a similar function called `.text()` that only alters text without adding tags. In other words, this function will not evaluate any HTML tags passed to it, but will instead treat it as the text you want to replace the existing content with.
+
+3. `function chaining` involves sticking two jQuery functions together, for example:
+```
+$("#target2").clone().appendTo("#right-well");
+```
+first you copy an element an then you move it to defined place in a doc
