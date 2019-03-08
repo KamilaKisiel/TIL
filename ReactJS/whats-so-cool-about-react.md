@@ -1,4 +1,9 @@
-## whats so cool about ReactJS?
+## what's React
+React, popularized by Facebook, is an open-source JavaScript library for building user interfaces. It is used to create components, handle state and props, utilize event listeners and certain life cycle methods to update data as it changes.
+
+React combines HTML with JavaScript functionality to create its own markup language, JSX. 
+
+### whats so cool about ReactJS?
 
 1) Components are reusable
 code written as a small, self-sufficient portions can be used(rewritten) in many places which is very efficient and it is also very easy to maintain
