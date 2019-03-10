@@ -1,7 +1,8 @@
 ## what's React
 React, popularized by Facebook, is an open-source JavaScript library for building user interfaces. It is used to create components, handle state and props, utilize event listeners and certain life cycle methods to update data as it changes.
 
-React combines HTML with JavaScript functionality to create its own markup language, JSX. 
+React combines HTML with JavaScript functionality to create its own markup language, JSX that allows to write HTML directly within JavaScript.
+It allows using the full programmatic power of JavaScript within HTML, and helps to keep a code readable.
 
 ### whats so cool about ReactJS?
 
