@@ -34,3 +34,4 @@ const TypesOfFruit = () => {
       );
     }
   };
+  ReactDOM.render(<TypesOfFood />, document.getElementById('challenge-node'))
